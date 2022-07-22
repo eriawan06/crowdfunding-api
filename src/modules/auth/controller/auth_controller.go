@@ -1,0 +1,9 @@
+package controller
+
+import "github.com/gin-gonic/gin"
+
+type AuthController interface {
+	Register(ctx *gin.Context)
+	Login(ctx *gin.Context)
+	GoogleOauth(ctx *gin.Context)
+}
